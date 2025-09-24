@@ -1,3 +1,5 @@
 require("config.lazy")
 require("config.options")
-vim.cmd.colorscheme("habamax")
+require("config.keymaps")
+require("config.colorscheme")
+require("config.lsp")
