@@ -27,7 +27,7 @@ export PATH="$PATH:$HOME/.local/bin"
 # --
 
 # --CotEditor
-alias cot="open -a CotEditor"
+# alias cot="open -a CotEditor"
 # --
 
 # --KDIX
@@ -46,10 +46,14 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(zoxide init zsh)"
 # --
 
-# --welcome script
+# --Welcome Script
 fastfetch
 # --
 
 # --Starship - Custom Shell Prompt
 eval "$(starship init zsh)"
 # --
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
