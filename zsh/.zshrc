@@ -10,7 +10,10 @@ alias ls="eza"
 # alias find="fd"
 alias grep="rg" # ripgrep
 alias cd="z" # zoxide
-alias mkdirdate="mkdir $(date +%Y-%m-%d_%H-%M-%S)"
+
+mkdirdate() {
+  mkdir $(date +%Y-%m-%d_%H-%M-%S)
+}
 
 # --My CLI app
 # Suketan
