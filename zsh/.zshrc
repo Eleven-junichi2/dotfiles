@@ -63,3 +63,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Added by Antigravity
 export PATH="/Users/junic/.antigravity/antigravity/bin:$PATH"
+
+# --gitignore.io
+function gi() {
+  curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/"$@"
+}
+
