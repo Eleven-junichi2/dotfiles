@@ -12,7 +12,9 @@ alias grep="rg" # ripgrep
 alias cd="z" # zoxide
 
 mkdirdate() {
-  mkdir $(date +%Y-%m-%d_%H-%M-%S)
+  local now=$(date +%Y-%m-%d_%H-%M-%S)
+  mkdir "$now" && cd "$now"
+  echo "$now"
 }
 
 # --My CLI app
