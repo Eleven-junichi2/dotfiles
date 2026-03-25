@@ -71,3 +71,8 @@ function gi() {
   curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/"$@"
 }
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/junic/.lmstudio/bin"
+# End of LM Studio CLI section
+
