@@ -1,0 +1,9 @@
+WRN 2026-05-26T18:31:02.089 ?.43396    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/wzeKTy/nvim.43396.0
+WRN 2026-05-26T18:33:36.995 ?.45270    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/ZHm4Z9/nvim.45270.0
+WRN 2026-05-26T18:56:25.334 ?.47970    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/kGiLm7/nvim.47970.0
+WRN 2026-05-26T19:06:05.615 ?.49345    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/b27zIr/nvim.49345.0
+WRN 2026-05-26T19:07:37.240 ?.49874    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/nwAbjB/nvim.49874.0
+WRN 2026-05-26T19:09:34.213 ?.50413    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/5P1OlQ/nvim.50413.0
+WRN 2026-05-26T19:12:48.760 ?.51068    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/Y57ozg/nvim.51068.0
+WRN 2026-05-26T19:19:09.032 ?.53037    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/Cq997p/nvim.53037.0
+WRN 2026-05-26T19:19:09.032 ?.53038    server_start:197: Failed to start server: operation not permitted: /var/folders/rv/csrzyl6d5w7b1ygn4kwbhqcc0000gn/T/nvim.junic/uGBFA9/nvim.53038.0
