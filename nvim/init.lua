@@ -77,7 +77,7 @@ vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagn
 
 -- --Map for file explorer--
 -- Neo-tree.nvim
-vim.keymap.set("n", "<leader>e", function()
+vim.keymap.set("n", "<leader>E", function()
   require("neo-tree.command").execute({
     action = "focus", -- neo-tree を開いてフォーカスする
     source = "filesystem", -- ファイルツリーを表示する
@@ -87,7 +87,7 @@ vim.keymap.set("n", "<leader>e", function()
   })
 end, { desc = "Toggle file explorer (Neo-tree)" })
 -- Oil.nvim
-vim.keymap.set("n", "<leader>E", function()
+vim.keymap.set("n", "<leader>e", function()
   require("oil").toggle_float()
 end, { desc = "Toggle file explorer (Oil.nvim)" })
 -- ----
@@ -155,7 +155,17 @@ require("config.lazy")
 -- require('gitsigns').setup {}
 -- ----
 
--- --colorscheme--
+-- --Apperance/Colorscheme--
 vim.cmd.colorscheme("dracula")
--- 
 
+-- bg = "NONE"で透過設定
+vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE" })
+
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE" })
+-- vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE" })
+-- vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE" })
+--
