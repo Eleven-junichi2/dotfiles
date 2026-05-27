@@ -23,6 +23,7 @@ return {
         "pyright",
         "ruff",
         "clangd",
+	"neocmake",
       })
     end,
   },
