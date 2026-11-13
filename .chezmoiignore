@@ -1,0 +1,8 @@
+{{ if eq .chezmoi.os "windows" }}
+.zshrc
+.config/nvim
+.config/nvim/**
+{{ else }}
+AppData/Local/nvim
+AppData/Local/nvim/**
+{{ end }}
