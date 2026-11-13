@@ -4,7 +4,7 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       vim.lsp.config("lua_ls", {
-	-- --Configure to recognize `vim` global.--
+        -- --Configure to recognize `vim` global.--
         settings = {
           Lua = {
             diagnostics = {
@@ -15,7 +15,7 @@ return {
             },
           },
         },
-	-- ----
+        -- ----
       })
 
       vim.lsp.enable({
@@ -23,7 +23,10 @@ return {
         "pyright",
         "ruff",
         "clangd",
-	"neocmake",
+        "neocmake",
+        "jdtls",
+        "ts_ls",
+        "rust_analyzer",
       })
     end,
   },

@@ -10,6 +10,8 @@ alias ls="eza"
 # alias find="fd"
 alias grep="rg" # ripgrep
 alias cd="z" # zoxide
+alias scrcpy_usual="scrcpy --audio-bit-rate=256K -S --window-borderless --audio-buffer=50 --keyboard=uhid"
+alias scrcpy_usual2="scrcpy --audio-bit-rate=256K -S --audio-buffer=50 --keyboard=uhid"
 
 mkdirdate() {
   local now=$(date +%Y-%m-%d_%H-%M-%S)
@@ -42,9 +44,9 @@ export PATH="$PATH:$HOME/.local/bin"
 # --?
 
 # --nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # --
 
 # --zoxide
@@ -59,10 +61,6 @@ fastfetch
 eval "$(starship init zsh)"
 # --
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # Added by Antigravity
 export PATH="/Users/junic/.antigravity/antigravity/bin:$PATH"
 
@@ -75,4 +73,8 @@ function gi() {
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/junic/.lmstudio/bin"
 # End of LM Studio CLI section
+
+# --nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+# --
 

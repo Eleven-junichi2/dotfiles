@@ -113,4 +113,8 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
+  {
+    "NMAC427/guess-indent.nvim",
+    opts = {},
+  },
 }

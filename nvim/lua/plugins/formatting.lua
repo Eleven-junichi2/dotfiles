@@ -7,6 +7,7 @@ return {
         c = { "clang_format" },
         cpp = { "clang_format" },
         lua = { "stylua" },
+        rust = { "rustfmt" },
       },
     },
   },

@@ -50,6 +50,13 @@ vim.diagnostic.config({
   },
 })
 
+
+-- Indent / Tab Settings
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+-- vim.opt.smartindent = true
+
 -- KEYMAPS
 --
 -- See `:h vim.keymap.set()`, `:h mapping`, `:h keycodes`
@@ -73,7 +80,14 @@ vim.keymap.set({ "v" }, "<D-/>", "gc", { remap = true, desc = "Toggle comment se
 
 -- Map for diagnostic
 
-vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic" })
+vim.keymap.set("n", "<leader>d", function()
+  -- 1回目：まずポップアップを開く（すでに開いている場合はそのウィンドウIDが返る）
+  local _, winid = vim.diagnostic.open_float({ focus = false })
+  -- 2回目：開いたウィンドウが存在する場合、そこに確実にフォーカスを移動する
+  if winid then
+    vim.api.nvim_set_current_win(winid)
+  end
+end, { desc = "Show diagnostic and force focus" })
 
 -- --Map for file explorer--
 -- Neo-tree.nvim
@@ -92,10 +106,16 @@ vim.keymap.set("n", "<leader>e", function()
 end, { desc = "Toggle file explorer (Oil.nvim)" })
 -- ----
 
+-- Map for buffer
+vim.keymap.set("n", "<leader><Tab>", vim.cmd.bnext, { desc = "Next buffer (tab)" })
+vim.keymap.set("n", "<leader><S-Tab>", vim.cmd.bprevious, { desc = "Previous buffer (tab)" })
+
 local do_format = function()
   require("conform").format({ async = true, lsp_format = "fallback" })
 end
-vim.keymap.set({ "n", "v", "i" }, "<leader>f", do_format, { desc = "Format buffer" })
+vim.keymap.set({ "n", "v" }, "<leader>f", do_format, { desc = "Format buffer" })
+
+-- Map for display documentation
 
 -- AUTOCOMMANDS (EVENT HANDLERS)
 --
